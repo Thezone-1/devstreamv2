@@ -15,6 +15,6 @@ def heartbeat():
     return jsonify({"status": "healthy"})
 
 
-@app.get("/welcome")
+@app.route("/welcome")
 def welcome_template():
     return render_template("base.html", title="devstream")
